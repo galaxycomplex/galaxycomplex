@@ -32,3 +32,19 @@
   border: 1px solid #ccc;
   border-top: none;
 }
+
+body {
+  background-color: black;
+  background-image: url('redrocksbg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+p {
+  color: #ffffff;
+  font-family: Lucida Console, monospace;
+}
+h1 {
+  color: #ffffff;
+  font-family: Lucida Console, monospace;
+}
