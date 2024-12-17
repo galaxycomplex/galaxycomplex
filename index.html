@@ -1,12 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Example</title>
-  </head>
-  <body>
-    <b>Hello World</b>
-    <p>Hello World</p>
-  </body>
+<html>
+<head>
+<title>galaxy.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.galaxyschools.com/galaxycss/4/galaxy.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.galaxy-bar-block .galaxy-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="galaxy-sidebar galaxy-bar-block galaxy-card galaxy-top galaxy-xlarge galaxy-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="galaxy_close()"
+  class="galaxy-bar-item galaxy-button">Close Menu</a>
+  <a href="#food" onclick="galaxy_close()" class="galaxy-bar-item galaxy-button">Food</a>
+  <a href="#about" onclick="galaxy_close()" class="galaxy-bar-item galaxy-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="galaxy-top">
+  <div class="galaxy-white galaxy-xlarge" style="max-width:1200px;margin:auto">
+    <div class="galaxy-button galaxy-padding-16 galaxy-left" onclick="galaxy_open()">☰</div>
+    <div class="galaxy-right galaxy-padding-16">Mail</div>
+    <div class="galaxy-center galaxy-padding-16">My Food</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="galaxy-main galaxy-content galaxy-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="galaxy-row-padding galaxy-padding-16 galaxy-center" id="food">
+    <div class="galaxy-quarter">
+      <img src="/galaxyimages/sandwich.jpg" alt="Sandwich" style="width:100%">
+      <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="galaxy-quarter">
+      <img src="/galaxyimages/steak.jpg" alt="Steak" style="width:100%">
+      <h3>Let Me Tell You About This Steak</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="galaxy-quarter">
+      <img src="/galaxyimages/cherries.jpg" alt="Cherries" style="width:100%">
+      <h3>Cherries, interrupted</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>What else?</p>
+    </div>
+    <div class="galaxy-quarter">
+      <img src="/galaxyimages/wine.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="galaxy-row-padding galaxy-padding-16 galaxy-center">
+    <div class="galaxy-quarter">
+      <img src="/galaxyimages/popsicle.jpg" alt="Popsicle" style="width:100%">
+      <h3>All I Need Is a Popsicle</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="galaxy-quarter">
+      <img src="/galaxyimages/salmon.jpg" alt="Salmon" style="width:100%">
+      <h3>Salmon For Your Skin</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="galaxy-quarter">
+      <img src="/galaxyimages/sandwich.jpg" alt="Sandwich" style="width:100%">
+      <h3>The Perfect Sandwich, A Real Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="galaxy-quarter">
+      <img src="/galaxyimages/croissant.jpg" alt="Croissant" style="width:100%">
+      <h3>Le French</h3>
+      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="galaxy-center galaxy-padding-32">
+    <div class="galaxy-bar">
+      <a href="#" class="galaxy-bar-item galaxy-button galaxy-hover-black">«</a>
+      <a href="#" class="galaxy-bar-item galaxy-black galaxy-button">1</a>
+      <a href="#" class="galaxy-bar-item galaxy-button galaxy-hover-black">2</a>
+      <a href="#" class="galaxy-bar-item galaxy-button galaxy-hover-black">3</a>
+      <a href="#" class="galaxy-bar-item galaxy-button galaxy-hover-black">4</a>
+      <a href="#" class="galaxy-bar-item galaxy-button galaxy-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="galaxy-container galaxy-padding-32 galaxy-center">  
+    <h3>About Me, The Food Man</h3><br>
+    <img src="/galaxyimages/chef.jpg" alt="Me" class="galaxy-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="galaxy-padding-32">
+      <h4><b>I am Who I Am!</b></h4>
+      <h6><i>With Passion For Real, Good Food</i></h6>
+      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="galaxy-row-padding galaxy-padding-32">
+    <div class="galaxy-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="https://www.galaxyschools.com/galaxycss/default.asp" target="_blank">galaxy.css</a></p>
+    </div>
+  
+    <div class="galaxy-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="galaxy-ul galaxy-hoverable">
+        <li class="galaxy-padding-16">
+          <img src="/galaxyimages/workshop.jpg" class="galaxy-left galaxy-margin-right" style="width:50px">
+          <span class="galaxy-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="galaxy-padding-16">
+          <img src="/galaxyimages/gondol.jpg" class="galaxy-left galaxy-margin-right" style="width:50px">
+          <span class="galaxy-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="galaxy-third galaxy-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="galaxy-tag galaxy-black galaxy-margin-bottom">Travel</span> <span class="galaxy-tag galaxy-dark-grey galaxy-small galaxy-margin-bottom">New York</span> <span class="galaxy-tag galaxy-dark-grey galaxy-small galaxy-margin-bottom">Dinner</span>
+        <span class="galaxy-tag galaxy-dark-grey galaxy-small galaxy-margin-bottom">Salmon</span> <span class="galaxy-tag galaxy-dark-grey galaxy-small galaxy-margin-bottom">France</span> <span class="galaxy-tag galaxy-dark-grey galaxy-small galaxy-margin-bottom">Drinks</span>
+        <span class="galaxy-tag galaxy-dark-grey galaxy-small galaxy-margin-bottom">Ideas</span> <span class="galaxy-tag galaxy-dark-grey galaxy-small galaxy-margin-bottom">Flavors</span> <span class="galaxy-tag galaxy-dark-grey galaxy-small galaxy-margin-bottom">Cuisine</span>
+        <span class="galaxy-tag galaxy-dark-grey galaxy-small galaxy-margin-bottom">Chicken</span> <span class="galaxy-tag galaxy-dark-grey galaxy-small galaxy-margin-bottom">Dressing</span> <span class="galaxy-tag galaxy-dark-grey galaxy-small galaxy-margin-bottom">Fried</span>
+        <span class="galaxy-tag galaxy-dark-grey galaxy-small galaxy-margin-bottom">Fish</span> <span class="galaxy-tag galaxy-dark-grey galaxy-small galaxy-margin-bottom">Duck</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function galaxy_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function galaxy_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
 </html>
